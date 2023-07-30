@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
   import Icon from "@iconify/svelte";
 
   let isVisible = false;
   let selectedValue = "";
 
-  function setSelectedValue(value) {
+  function setSelectedValue(value: string) {
     selectedValue = value;
     isVisible = false;
   }

@@ -2,11 +2,13 @@
   import Icon from "@iconify/svelte";
 </script>
 
-<div class="flex-grow max-w-[48rem] h-[5.6rem] relative">
+<div
+  class="flex-grow max-w-[48rem] h-[5.6rem] relative rounded-[5px] overflow-hidden"
+>
   <input
     type="text"
     placeholder="Search for a country..."
-    class="text-4xl input rounded-sm w-full h-full pl-20 tracking-wider placeholder:text-dark-gray"
+    class="text-4xl input rounded-sm w-full h-full pl-20 tracking-wider bg-white text-darker-blue dark:text-white dark:bg-dark-blue placeholder:text-dark-gray"
   />
   <Icon
     icon="carbon:search"
