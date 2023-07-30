@@ -8,7 +8,7 @@
   class="grid grid-rows-[max-content_minmax(max-content,1fr)] gap-[4rem] h-full"
 >
   <Header />
-  <Container classes="bg-red-400 h-full w-full">
+  <Container classes="h-full w-full">
     <Filters />
     <div></div>
   </Container>
