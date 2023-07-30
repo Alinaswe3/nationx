@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import Container from "$lib/components/Container.svelte";
+  import Filters from "$lib/components/Filters.svelte";
+  import Header from "$lib/components/Header.svelte";
+</script>
+
+<div
+  class="grid grid-rows-[max-content_minmax(max-content,1fr)] gap-[4rem] h-full"
+>
+  <Header />
+  <Container classes="bg-red-400 h-full w-full">
+    <Filters />
+    <div></div>
+  </Container>
+</div>
