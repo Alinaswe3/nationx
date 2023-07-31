@@ -1,6 +1,5 @@
 <script lang="ts">
   import type Country from "$lib/components/Country.svelte";
-  import slugify from "slugify";
   export let data: Country;
 
   function commafy(num: number) {
@@ -9,9 +8,7 @@
 </script>
 
 <a
-  href={slugify(data.name.common, {
-    lower: true,
-  })}
+  href={data.name.common}
   class="rounded-[5px] overflow-hidden shadow-lg flex flex-col w-full h-[33.6rem] dark:bg-dark-blue bg-white"
 >
   <img
