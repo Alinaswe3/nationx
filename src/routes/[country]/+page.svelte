@@ -58,9 +58,9 @@
       />
     </div>
     <div>
-      <h2 class="text-[3.2rem] font-extrabold mb-[2.4rem]">
+      <h1 class="text-[3.2rem] font-extrabold mb-[2.4rem]">
         {country.name.common}
-      </h2>
+      </h1>
       <div class="flex justify-between mb-[7rem] gap-12">
         <ul>
           <li>
