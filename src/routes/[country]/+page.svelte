@@ -44,13 +44,13 @@
   }
 </script>
 
-<Container classes="flex flex-col gap-[4rem] w-full h-full pb-8">
+<Container classes="flex flex-col gap-[4rem] w-full h-full">
   <Header />
   <a href="/" class="ml-8 flex gap-3 items-center text-[1.6rem] font-light"
     ><Icon icon="ph:arrow-left" class="w-8 h-8" /> Back</a
   >
   <div class="h-full w-full custom-grid">
-    <div class="bg-red-600 h-full w-full flex justify-center items-center">
+    <div class="h-full w-full flex justify-center">
       <img
         src={country.flags.png}
         alt={country.flags.alt}
@@ -104,7 +104,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex flex-wrap gap-6 items-center">
+      <div class="flex flex-wrap gap-6 items-center mb-[6rem]">
         <p class="text-[1.6rem] font-semibold">Border Countries:</p>
         {#if borders.length > 0}
           {#each borders as nation}
@@ -126,7 +126,8 @@
   .custom-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min-content, 56rem));
-    gap: 12rem;
+    column-gap: 12rem;
+    row-gap: 6rem;
     justify-content: center;
   }
 
