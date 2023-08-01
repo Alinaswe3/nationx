@@ -8,7 +8,7 @@
 <div class="grid grid-rows-[max-content_1fr] gap-[4rem] h-full">
   <Header />
   <Container
-    classes="grid grid-rows-[max-content_1fr] gap-[2rem] h-full w-full overflow-hidden"
+    classes="grid grid-rows-[max-content_1fr] gap-[3rem] h-full w-full overflow-hidden"
   >
     <Filters />
     <Countries />
