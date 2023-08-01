@@ -10,7 +10,7 @@
     bind:value={$searchedCountry}
     type="text"
     placeholder="Search for a country..."
-    class="placeholder:text-[1.4rem] placeholder:sm:text-[1.2rem] text-4xl input rounded-sm w-full h-full pl-20 tracking-wider bg-white text-darker-blue dark:text-white dark:bg-dark-blue placeholder:text-dark-gray"
+    class="placeholder:text-[1.4rem] placeholder:sm:text-[1.2rem] text-3xl input rounded-sm w-full h-full pl-20 tracking-wider bg-white text-darker-blue dark:text-white dark:bg-dark-blue placeholder:text-dark-gray"
   />
   <Icon
     icon="carbon:search"
