@@ -14,7 +14,7 @@
 </script>
 
 <button
-  class="flex gap-3 items-center text-[1.6rem] font-semibold tracking-wide"
+  class="flex gap-3 items-center text-[1.2rem] sm:text-[1.6rem] font-semibold tracking-wide"
   on:click={() => {
     isDarkMode = document.documentElement.classList.toggle("dark");
     if (isDarkMode) localStorage.setItem("theme", "dark");
