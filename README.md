@@ -1,38 +1,64 @@
-# create-svelte
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Creating a project
+## Table of contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Frontend Mentor - REST Countries API with color theme switcher solution](#frontend-mentor---rest-countries-api-with-color-theme-switcher-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Overview
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### The challenge
 
-## Developing
+Users should be able to:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode _(optional)_
 
-```bash
-npm run dev
+### Links
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## Building
+## My process
 
-To create a production version of your app:
+### Built with
 
-```bash
-npm run build
-```
+- Svelte kit
+- Tailwind CSS
+- Vite
+- Typescript
 
-You can preview the production build with `npm run preview`.
+### What I learned
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+While building this project I encountered many problems which gave me the opportunity to learn more about css, svelte and web development in general. I finally got a basic understanding of svelte and svelte kit, and also revised some core css concepts.
+
+### Continued development
+
+I really want to focus on building and developing my CSS skills because I can't always hide behind a UI framework to do the job for me. Since svelte doesn't really have a standard UI framework, I really want to learn CSS in order for me to build my own UI components.
+
+### Useful resources
+
+- [ChatGPT](https://www.chat.openai.com) - This helped me remember some JS concepts that I forgot.
+- [Reddit](https://www.reddit.com) - I used reddit more instead of stack overflow for the first time in order to find solutions that were really specific to svelte.
+
+## Author
+
+- Website - [Alinaswe Chilyabanyama](https://www.alinaswecodes.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Alinaswe3)
+- Facebook - [Alinaswe Codes](https://web.facebook.com/profile.php?id=100085279222628)
+- Twitter - [@AChilyabanyama](https://twitter.com/AChilyabanyama)
