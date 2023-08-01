@@ -44,19 +44,17 @@
   }
 </script>
 
-<Container classes="flex flex-col gap-[4rem] w-full h-full">
+<Container classes="flex flex-col gap-[4rem] w-full h-full pb-8">
   <Header />
   <a href="/" class="ml-8 flex gap-3 items-center text-[1.6rem] font-light"
     ><Icon icon="ph:arrow-left" class="w-8 h-8" /> Back</a
   >
-  <div
-    class="h-full w-full grid grid-cols-2 lg:grid-cols-1 lg:justify-center gap-[12rem] shadow-sm"
-  >
-    <div>
+  <div class="h-full w-full custom-grid">
+    <div class="bg-red-600 h-full w-full flex justify-center items-center">
       <img
         src={country.flags.png}
         alt={country.flags.alt}
-        class="w-full h-[40rem] rounded-[5px]"
+        class="max-w-[56rem] w-full max-h-[40rem] rounded-[5px]"
       />
     </div>
     <div>
@@ -125,6 +123,13 @@
 </Container>
 
 <style>
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 56rem));
+    gap: 12rem;
+    justify-content: center;
+  }
+
   li {
     display: flex;
     gap: 5px;
