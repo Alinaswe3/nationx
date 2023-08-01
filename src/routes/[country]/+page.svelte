@@ -46,7 +46,9 @@
 
 <Container classes="flex flex-col gap-[4rem] w-full h-full">
   <Header />
-  <a href="/" class="ml-8 flex gap-3 items-center text-[1.6rem] font-light"
+  <a
+    href="/"
+    class="pl-8 pr-10 py-2 shadow-sm dark:bg-dark-blue bg-white rounded-[5px] self-start flex gap-3 items-center text-[1.6rem] font-light"
     ><Icon icon="ph:arrow-left" class="w-8 h-8" /> Back</a
   >
   <div class="h-full w-full custom-grid">
