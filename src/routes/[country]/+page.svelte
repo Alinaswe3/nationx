@@ -49,7 +49,7 @@
   <a href="/" class="ml-8 flex gap-3 items-center text-[1.6rem] font-light"
     ><Icon icon="ph:arrow-left" class="w-8 h-8" /> Back</a
   >
-  <div class="h-full w-full grid grid-cols-2 gap-[12rem]">
+  <div class="h-full w-full grid grid-cols-2 gap-[12rem] shadow-sm">
     <div>
       <img
         src={country.flags.png}
