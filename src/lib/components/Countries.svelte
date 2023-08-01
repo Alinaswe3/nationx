@@ -2,15 +2,20 @@
   import { countries } from "$lib/stores/CountriesStore";
   import { isLoading } from "$lib/stores/CountriesStore";
   import { isError } from "$lib/stores/CountriesStore";
-  import { searchedValue } from "$lib/stores/CountriesStore";
+  import { searchedCountry } from "$lib/stores/CountriesStore";
+  import { selectedRegion } from "$lib/stores/CountriesStore";
   import Country from "./Country.svelte";
 
-  $: searchVal = $searchedValue.trim().toLowerCase();
-  $: nations = $countries.filter(
-    (country) =>
-      country.name.common.toLowerCase().includes(searchVal) ||
-      country.name.official.toLowerCase().includes(searchVal),
-  );
+  $: searchVal = $searchedCountry.trim().toLowerCase();
+  $: nations = $countries
+    .filter(
+      (country) =>
+        country.name.common.toLowerCase().includes(searchVal) ||
+        country.name.official.toLowerCase().includes(searchVal),
+    )
+    .filter((country) =>
+      country.region.toLowerCase().includes($selectedRegion.toLowerCase()),
+    );
 </script>
 
 <div class="countries w-full h-full overflow-scroll">

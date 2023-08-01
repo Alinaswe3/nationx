@@ -1,8 +1,13 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
+  import { selectedRegion } from "$lib/stores/CountriesStore";
 
   let isVisible = false;
   let selectedValue = "";
+
+  $: {
+    if (selectedValue !== "Filter by region") $selectedRegion = selectedValue;
+  }
 
   function setSelectedValue(value: string) {
     selectedValue = value;
@@ -31,6 +36,11 @@
       isVisible ? "show" : "hide"
     } [&>*:hover]:dark:bg-dark-gray [&>*:hover]:bg-dark-gray absolute overflow-hidden dark:bg-dark-blue bg-white w-full z-30 top-full mt-4 left-0 rounded-[5px] flex flex-col`}
   >
+    <li>
+      <button on:click={() => setSelectedValue("Filter by region")}>
+        None
+      </button>
+    </li>
     <li>
       <button on:click={() => setSelectedValue("Africa")}> Africa </button>
     </li>

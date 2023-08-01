@@ -5,7 +5,8 @@ export const countries = writable<Array<Country>>([]);
 export const isLoading = writable(true);
 export const isError = writable(false);
 
-export const searchedValue = writable("");
+export const searchedCountry = writable("");
+export const selectedRegion = writable("");
 
 const url = "https://restcountries.com/v3.1/all";
 
