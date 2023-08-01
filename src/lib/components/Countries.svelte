@@ -2,7 +2,15 @@
   import { countries } from "$lib/stores/CountriesStore";
   import { isLoading } from "$lib/stores/CountriesStore";
   import { isError } from "$lib/stores/CountriesStore";
+  import { searchedValue } from "$lib/stores/CountriesStore";
   import Country from "./Country.svelte";
+
+  $: searchVal = $searchedValue.trim().toLowerCase();
+  $: nations = $countries.filter(
+    (country) =>
+      country.name.common.toLowerCase().includes(searchVal) ||
+      country.name.official.toLowerCase().includes(searchVal),
+  );
 </script>
 
 <div class="countries w-full h-full overflow-scroll">
@@ -11,7 +19,7 @@
       class="text-darker-blue dark:text-light-gray loading loading-bars loading-lg"
     ></span>
   {:else if !$isLoading && !$isError}
-    {#each $countries as country}
+    {#each nations as country}
       <Country data={country} />
     {/each}
   {:else}
