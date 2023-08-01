@@ -18,10 +18,10 @@
     );
 </script>
 
-<div class="countries w-full h-full overflow-y-scroll pr-4">
+<div class="countries w-full h-full overflow-y-auto pr-4">
   {#if $isLoading}
     <span
-      class="text-darker-blue dark:text-light-gray loading loading-bars loading-lg"
+      class="text-darker-blue mt-16 dark:bg-white bg-dark-blue justify-self-center col-span-4 dark:text-light-gray loading loading-bars loading-lg"
     ></span>
   {:else if !$isLoading && !$isError}
     {#each nations as country}
