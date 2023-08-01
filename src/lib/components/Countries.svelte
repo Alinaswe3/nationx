@@ -18,7 +18,7 @@
     );
 </script>
 
-<div class="countries w-full h-full overflow-scroll">
+<div class="countries w-full h-full overflow-y-scroll pr-4">
   {#if $isLoading}
     <span
       class="text-darker-blue dark:text-light-gray loading loading-bars loading-lg"
@@ -35,7 +35,7 @@
 <style>
   .countries {
     display: grid;
-    gap: 6.6rem;
+    gap: 5.6rem;
     justify-content: center;
     padding-bottom: 2.4rem;
     grid-template-columns: repeat(auto-fill, 26rem);
