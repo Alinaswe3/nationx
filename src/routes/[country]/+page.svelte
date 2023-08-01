@@ -49,7 +49,9 @@
   <a href="/" class="ml-8 flex gap-3 items-center text-[1.6rem] font-light"
     ><Icon icon="ph:arrow-left" class="w-8 h-8" /> Back</a
   >
-  <div class="h-full w-full grid grid-cols-2 gap-[12rem] shadow-sm">
+  <div
+    class="h-full w-full grid grid-cols-2 lg:grid-cols-1 lg:justify-center gap-[12rem] shadow-sm"
+  >
     <div>
       <img
         src={country.flags.png}
@@ -61,7 +63,7 @@
       <h1 class="text-[3.2rem] font-extrabold mb-[2.4rem]">
         {country.name.common}
       </h1>
-      <div class="flex justify-between mb-[7rem] gap-12">
+      <div class="flex flex-wrap justify-between mb-[7rem] gap-x-12">
         <ul>
           <li>
             <span>Native Name:</span>
